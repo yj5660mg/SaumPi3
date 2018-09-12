@@ -5,7 +5,7 @@
 #The rule of the game is to score the Highest amount but only counting single digits, meaning if your card exceeds over 10 then you would get 1 for your cards adding up to 11.
 #And face cards are counted as 10.  So Jack = 10, Queen = 10, King = 10.  For the Ace = 1.  The rest of the cards are just numbers.
 #For example, an Ace, Jack, and Seven card would equal to being 18 in BlackJack, but in Three cards that would be 8, dropping the 10.
-#So lets play!!
+#So lets play!!!
 
 
 
