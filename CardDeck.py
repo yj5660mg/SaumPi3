@@ -1,3 +1,5 @@
+import random
+
 # clubs, spades, diamonds, hearts
 cardDictiony = {1: 1,  # this is for the value of each cards
                 2: 2,
@@ -109,3 +111,21 @@ numberMatchDictiony = { 1: "Ace of Clubs",
                         51: "Queen of Hearts",
                         52: "King of Hearts",
                         }
+
+
+numbers_used_list = []  # where used to try and make sure you don't draw the same card twice
+def draw_cards():  # This function will add a random card
+
+    rande_number = random.randint(1, 52)  # will pick a number from 0 to 52
+
+    checker = True
+    while checker == True:
+        if rande_number not in numbers_used_list:  # checks if number in master list, so we don't get duplicate cards
+            rando_card_num = numberMatchDictiony[rande_number]  # this works to return the card over the number
+            numbers_used_list.append(rande_number)  # adding number to master list
+            #print(numbers_used_list)  # used for testting to make sure no numbers are matching
+            card_number_worth = cardDictiony[rande_number]  # will get the value of the card
+            return rando_card_num, card_number_worth  # returning card type, and card playing value
+
+        rande_number = random.randint(1, 52)  # will start over is number is in master list
+
