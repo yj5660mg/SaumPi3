@@ -45,7 +45,7 @@ arrayPlayer2Numbers = []
 arrayPlayer3Numbers = []
 arrayPlayer4Numbers = []
 
-for x in range(4):
+for x in range(3):
     card = draw_cards()
     arrayPlayer1.append(card[0])
     arrayPlayer1Numbers.append(card[1])
