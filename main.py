@@ -56,7 +56,7 @@ while play_again == True:
     playerListNumbers = [FindWinner.total_score(arrayPlayer1Numbers), FindWinner.total_score(arrayPlayer2Numbers),
                          FindWinner.total_score(arrayPlayer3Numbers), FindWinner.total_score(arrayPlayer4Numbers)]
 
-
+    # todo We need to decide on one display type for the user, What's your preference lucky?
     print("Your cards are: ", arrayPlayer1, "Your score is: ", FindWinner.total_score(arrayPlayer1Numbers))  # not sure which looks better for viewing change how you wish lucky
     print("Player two cards: ", arrayPlayer2, "score is: ", FindWinner.total_score(arrayPlayer2Numbers))
     print("Player three cards: ")
