@@ -9,6 +9,7 @@ print("And face cards are counted as 10.  So Jack = 10, Queen = 10, King = 10.  
 print("For example, an Ace, Jack, and Seven card would equal to being 18 in BlackJack, \n"
       " but in Three cards that would be 8, dropping the 10.")
 print("  So lets play!!!")
+print("")
 
 
 
@@ -22,6 +23,10 @@ try:  # could be used to make it GUI
     from tkinter import *
 except ImportError:
     print("No GUI option")
+
+p1 = PlayerClass.Player(input("Whats your name? "))
+#print(p1.name)
+print("")
 
 
 play_again = True
@@ -59,17 +64,16 @@ while play_again == True:
     playerListNumbers = [FindWinner.total_score(arrayPlayer1Numbers), FindWinner.total_score(arrayPlayer2Numbers),
                          FindWinner.total_score(arrayPlayer3Numbers), FindWinner.total_score(arrayPlayer4Numbers)]
 
-    # todo We need to decide on one display type for the user, What's your preference lucky?
-    print("Your cards are: ", arrayPlayer1, "Your score is: ", FindWinner.total_score(arrayPlayer1Numbers))  # not sure which looks better for viewing change how you wish lucky
+    print(p1.name, "cards are: ", arrayPlayer1, "Your score is: ", FindWinner.total_score(arrayPlayer1Numbers))  # not sure which looks better for viewing change how you wish lucky
     print("Player two cards: ", arrayPlayer2, "score is: ", FindWinner.total_score(arrayPlayer2Numbers))
-    print("Player three cards: ")
-    print(arrayPlayer3, "score is: ", FindWinner.total_score(arrayPlayer3Numbers))
-    print("Player four cards: ")
-    print(arrayPlayer4, "score is: ", FindWinner.total_score(arrayPlayer4Numbers))
+    print("Player three cards: ", arrayPlayer3, "score is: ", FindWinner.total_score(arrayPlayer3Numbers))
+    print("Player four cards: ", arrayPlayer4, "score is: ", FindWinner.total_score(arrayPlayer4Numbers))
     FindWinner.compare_score(playerListNumbers)  # Will call the method to find the winner
 
     round_two = input("Play again? Enter for yes, n for no: ")  # to get user input for if they want to quit
+    round_two = round_two.lower() # in case people capitalise it
     if round_two == "n":  # seeing if it matches user input
+        print("Game Over!")
         sys.exit(0)  # exiting the game
     #elif round_two == "y":  # not needed Enter Button will play another game
 

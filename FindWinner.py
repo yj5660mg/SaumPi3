@@ -1,3 +1,5 @@
+
+
 def total_score(number_list):  # The purpose of this function is to add up the total scores of the cards in hand
     add_up = 0  # used for adding other numbers to
     for i in number_list:  # goes through each item in the list
@@ -13,11 +15,13 @@ def compare_score(playerListNumbers):
     #first = playerListNumbers[0]  # was thinking of testing whom won with code another way
     highest = 0  # used to keep track what the highest score is
     player_whom_won = 0  # this number is for telling whom in the list has the highest code
+    #array_list_tied_for_win = []
     for i in playerListNumbers:  # going through each number in the list
         counter = counter + 1  # keeping track of which player we are comparing
         if highest < i:  # comparing the two players numbers
             highest = i  # making new highest if larger
             player_whom_won = counter  # will let us know whom won
+
 
     if player_whom_won == 0:  # That's You!
         print("You Won!")
@@ -29,3 +33,4 @@ def compare_score(playerListNumbers):
         print("Forth Player Won!")
     else:
         pass
+
