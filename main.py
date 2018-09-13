@@ -17,7 +17,7 @@ import random
 import CardDeck
 import PlayerClass
 import FindWinner
-# for uplead
+# for uplead 2
 
 try:  # could be used to make it GUI
     from tkinter import *
