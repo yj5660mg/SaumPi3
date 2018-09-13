@@ -64,25 +64,26 @@ while play_again == True:
     playerListNumbers = [FindWinner.total_score(arrayPlayer1Numbers), FindWinner.total_score(arrayPlayer2Numbers),
                          FindWinner.total_score(arrayPlayer3Numbers), FindWinner.total_score(arrayPlayer4Numbers)]
 
-    print(p1.name, "cards are: ", arrayPlayer1, "Your score is: ", FindWinner.total_score(arrayPlayer1Numbers))  # not sure which looks better for viewing change how you wish lucky
+    print(p1.name,"'s", "cards are: ", arrayPlayer1, "Your score is: ", FindWinner.total_score(arrayPlayer1Numbers))  # not sure which looks better for viewing change how you wish lucky
+    print(
+        "------------------------------------------------------------------------------------------------------------")
     print("Player two cards: ", arrayPlayer2, "score is: ", FindWinner.total_score(arrayPlayer2Numbers))
+    print(
+        "------------------------------------------------------------------------------------------------------------")
     print("Player three cards: ", arrayPlayer3, "score is: ", FindWinner.total_score(arrayPlayer3Numbers))
+    print("------------------------------------------------------------------------------------------------------------")
     print("Player four cards: ", arrayPlayer4, "score is: ", FindWinner.total_score(arrayPlayer4Numbers))
+    print(
+        "------------------------------------------------------------------------------------------------------------")
     FindWinner.compare_score(playerListNumbers)  # Will call the method to find the winner
-
+    print(
+        "------------------------------------------------------------------------------------------------------------")
     round_two = input("Play again? Enter for yes, n for no: ")  # to get user input for if they want to quit
     round_two = round_two.lower() # in case people capitalise it
     if round_two == "n":  # seeing if it matches user input
+        print(
+            "------------------------------------------------------------------------------------------------------------")
         print("Game Over!")
         sys.exit(0)  # exiting the game
     #elif round_two == "y":  # not needed Enter Button will play another game
-
-
-
-# billyBob = PlayerClass.Player("bob")
-
-#Player = bob()
-#bob = Player()
-#bob.play()
-#bob.play_winner()
 
