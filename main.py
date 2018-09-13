@@ -1,11 +1,14 @@
 
-#INSTRUCTIONS ABOUT THE GAME
-#This game in Laotian is called : Saum Pi, translated into English : Three Cards.
-#As many players as you would like, but here we chose 4.'
-#The rule of the game is to score the Highest amount but only counting single digits, meaning if your card exceeds over 10 then you would get 1 for your cards adding up to 11.
-#And face cards are counted as 10.  So Jack = 10, Queen = 10, King = 10.  For the Ace = 1.  The rest of the cards are just numbers.
-#For example, an Ace, Jack, and Seven card would equal to being 18 in BlackJack, but in Three cards that would be 8, dropping the 10.
-#So lets play!!!
+print("INSTRUCTIONS ABOUT THE GAME")
+print("This game in Laotian is called : Saum Pi, translated into English : Three Cards.")
+print("As many players as you would like, but here we choose 4.")
+print("The rule of the game is to score the Highest amount but only counting single digits, \n"
+      "meaning if your card exceeds over 10 then you would get 1 for your cards adding up to 11.")
+print("And face cards are counted as 10.  So Jack = 10, Queen = 10, King = 10.  For the Ace = 1. \n"
+      " The rest of the cards are just numbers.")
+print("For example, an Ace, Jack, and Seven card would equal to being 18 in BlackJack, \n"
+      " but in Three cards that would be 8, dropping the 10.")
+print("  So lets play!!!")
 
 
 
